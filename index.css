@@ -1,0 +1,12 @@
+body {
+  background: black;
+  color: white;
+}
+
+h1 {
+  color: yellow;
+}
+
+.tartan {
+  background-image: url("tartan.jpg");
+}
