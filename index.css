@@ -5,6 +5,7 @@ body {
 
 h1 {
   color: yellow;
+  align: center;
 }
 
 .tartan {
@@ -12,7 +13,8 @@ h1 {
 }
 
 .main {
+  background-image: none;
   background: black;
   color: white;
-  width: 90%;
+  max-width: 90%;
 }
