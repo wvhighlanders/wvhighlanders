@@ -1,15 +1,19 @@
 body {
   background: black;
   color: white;
+  display: flex;
 }
 
 h1 {
   color: yellow;
   text-align: center;
+  justify-content: center;
 }
 
 .tartan {
   background-image: url("tartan.jpg");
+  display: flex;
+  justify-content: center;
 }
 
 .main {
@@ -17,4 +21,8 @@ h1 {
   background: black;
   color: white;
   max-width: 90%;
+  margin: 10px;
+  justify-content: center;
+  display: flex;
+  height: 1000px;
 }
