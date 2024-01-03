@@ -10,6 +10,12 @@ h1 {
   -webkit-text-stroke: 2px red;
 }
 
+img {
+  border: 2px red;
+  border-radius: 10px;
+  max-width: 95%;
+}
+
 .tartan {
   background-image: url("tartan.jpg");
   display: flex;
