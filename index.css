@@ -27,5 +27,5 @@ h1 {
   border-radius: 10px;
   justify-content: center;
   display: flex;
-  height: 1000px;
+  flex-direction: column;
 }
