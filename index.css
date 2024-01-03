@@ -11,7 +11,8 @@ h1 {
   background-image: url("tartan.jpg");
 }
 
-.black {
+.main {
   background: black;
   color: white;
+  width: 90%;
 }
