@@ -33,6 +33,11 @@ img {
 .sidebyside {
   display: flex;
   flex-direction: row;
+  padding: 10px;
+}
+
+.item {
+  padding: 10px;
 }
 
 .main {
