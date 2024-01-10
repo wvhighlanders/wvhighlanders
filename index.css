@@ -30,6 +30,11 @@ img {
   width: 100%;
 }
 
+.sidebyside {
+  display: flex;
+  flex-direction: row;
+}
+
 .main {
   background-image: none;
   background: white;
