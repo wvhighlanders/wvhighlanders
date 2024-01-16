@@ -3,6 +3,7 @@
   <head>
     <title>WV Highlanders of Davis & Elkins College</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/44341eb78c.js" crossorigin="anonymous"></script>
   </head>
    <body>
     <div class="tartan">
@@ -13,12 +14,18 @@
             function protectpasscode() {
               const result = document.getElementById("pc").value;
               const music = [
-                "Amazing Grace","An Dro", "Atholl and Breadalbane Gathering"
+                ["Amazing Grace", 1],
+                ["An Dro", 1], 
+                ["Atholl Highlanders", 3]
               ];
-              let musicList = "<table id='musicTable'>"; 
+              let musicList = "<table id='musicTable'><tr><th>Tune</th><th>Difficulty</th><th>PDF</th><th>BWW</th></tr>"; 
               for (let i=0; i<music.length; i++) {
-                musicList += "<tr><td>" + music[i] + "</td><td><a href='music/" + music[i] + ".pdf' target='_blank'>PDF</a></td>" +
-                  "<td><a href='music/" + music[i] + ".bww' target='_blank'>BWW</a></td></tr>";
+                musicList += "<tr><td>" + music[i][0] + "</td><td>"
+                for (let j=1; j<=music[i][1]; j++) {
+                  musicList += "<i class='fa-solid fa-star'></i>";
+                }
+                musicList += "</td><td><a href='music/" + music[i][0] + ".pdf' target='_blank'>PDF</a></td>" +
+                  "<td><a href='music/" + music[i][0] + ".bww' target='_blank'>BWW</a></td></tr>";
               }
               musicList += "</table>";
               const passcode = 'bagpipe';
@@ -27,7 +34,19 @@
                 alert("Type passcode")
               } else {
                 if (result == passcode) {
-                  document.write("<h1>Music</h1>" + musicList);
+                  document.write("<html>
+                    <head>
+                      <title>WV Highlanders of Davis & Elkins College</title>
+                      <link rel='stylesheet' href='index.css'>
+                      <script src='https://kit.fontawesome.com/44341eb78c.js' crossorigin='anonymous'></script>
+                    </head>
+                     <body>
+                      <div class='tartan'>
+                        <div class='main'>
+                          <h1>Music</h1>" + musicList + "</div>
+                        </div>
+                       </body>
+                    </html>");
                 } else {
                   alert("Incorrect Passcode");
                   location.reload();
