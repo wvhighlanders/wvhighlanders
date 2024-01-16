@@ -17,9 +17,7 @@
                 ['Amazing Grace', 1],
                 ['An Dro', 1], 
                 ['Atholl Highlanders', 3]
-              ];
-              let header = '<html><head><link rel="stylesheet" href="index.css"><script src="https://kit.fontawesome.com/44341eb78c.js" crossorigin="anonymous"></script></head><body><div class="tartan"><div class="main"><h1>Music</h1>';
-              let musicList = '<table id="musicTable"><tr><th>Tune</th><th>Difficulty</th><th>PDF</th><th>BWW</th></tr>'; 
+              ];              let musicList = '<table id="musicTable"><tr><th>Tune</th><th>Difficulty</th><th>PDF</th><th>BWW</th></tr>'; 
               
               for (let i=0; i<music.length; i++) {
                 musicList += '<tr><td>' + music[i][0] + '</td><td>'
@@ -36,7 +34,8 @@
                 alert("Type passcode")
               } else {
                 if (result == passcode) {
-                  document.write(header + musicList + '</div></div></body></html>');
+                  document.write('<html><head><link rel="stylesheet" href="index.css"><script src="https://kit.fontawesome.com/44341eb78c.js" crossorigin="anonymous"></script></head><body><div class="tartan"><div class="main"><h1>Music</h1>' +
+                    musicList + '</div></div></body></html>');
                 } else {
                   alert("Incorrect Passcode");
                   location.reload();
