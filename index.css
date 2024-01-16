@@ -47,6 +47,10 @@ img {
   margin: 10px;
 }
 
+.nav {
+  text-align: center;
+}
+
 .main {
   background-image: none;
   background: white;
