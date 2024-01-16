@@ -14,35 +14,32 @@
             function protectpasscode() {
               const result = document.getElementById("pc").value;
               const music = [
-                ["Amazing Grace", 1],
-                ["An Dro", 1], 
-                ["Atholl Highlanders", 3]
+                ['Amazing Grace', 1],
+                ['An Dro', 1], 
+                ['Atholl Highlanders', 3]
               ];
-              let header = "<html><head><title>WV Highlanders of Davis & Elkins College</title>";
-              header += "<link rel='stylesheet' href='index.css'>";
-              header += "<script src='https://kit.fontawesome.com/44341eb78c.js' crossorigin='anonymous'></script></head>";
-              header += "<body><div class='tartan'><div class='main'><h1>Music</h1>";
-              let musicList = "<table id='musicTable'><tr><th>Tune</th><th>Difficulty</th><th>PDF</th><th>BWW</th></tr>"; 
+              let header = '<html><head><title>WV Highlanders of Davis & Elkins College</title>';
+              header += '<link rel="stylesheet" href="index.css">';
+              header += '<script src="https://kit.fontawesome.com/44341eb78c.js" crossorigin="anonymous"></script></head>';
+              header += '<body><div class="tartan"><div class="main"><h1>Music</h1>';
+              let musicList = '<table id="musicTable"><tr><th>Tune</th><th>Difficulty</th><th>PDF</th><th>BWW</th></tr>'; 
               
               for (let i=0; i<music.length; i++) {
-                musicList += "<tr><td>" + music[i][0] + "</td><td>"
+                musicList += '<tr><td>' + music[i][0] + '</td><td>'
                 for (let j=1; j<=music[i][1]; j++) {
-                  musicList += "<i class='fa-solid fa-star'></i>";
+                  musicList += '<i class='fa-solid fa-star'></i>';
                 }
-                musicList += "</td><td><a href='music/" + music[i][0] + ".pdf' target='_blank'>PDF</a></td>"
-                musicList += "<td><a href='music/" + music[i][0] + ".bww' target='_blank'>BWW</a></td></tr>";
+                musicList += '</td><td><a href="music/' + music[i][0] + '.pdf" target="_blank">PDF</a></td>'
+                musicList += '<td><a href="music/' + music[i][0] + '.bww" target="_blank">BWW</a></td></tr>';
               }
-              musicList += "</table>";
+              musicList += '</table>';
               const passcode = 'bagpipe';
               const space = '';
               if (result == space) {
                 alert("Type passcode")
               } else {
                 if (result == passcode) {
-                  document.write(header + musicList + "</div>
-                        </div>
-                       </body>
-                    </html>");
+                  document.write(header + musicList + '</div></div></body></html>');
                 } else {
                   alert("Incorrect Passcode");
                   location.reload();
