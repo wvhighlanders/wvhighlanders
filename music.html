@@ -12,7 +12,12 @@
          <script>
             function protectpasscode() {
               const result = document.getElementById('pc').value;
-              const music = ['Amazing\ Grace','An\ Dro','Atholl\ Highlanders'];
+              const music = ['Amazing\ Grace','An\ Dro','Atholl\ Highlanders','Auld\ Lang\ Syne','Barren\ Rocks\ of\ Aden',
+                'Black\ Bear','Blue\ Bells\ of\ Scotland','Brown\ Haired\ Maiden','Cabar\ Feidh','Calypso\ Piper','ChariotsOfFire',
+                'Children','Cock\ of\ the\ North','Cockney\ Jocks','Cork\ Hill','Crags\ of\ Tumbledown\ Mountain','Danny\ Boy',
+                'Flower\ of\ Scotland','Forty-Second\ Regiment','Going\ Home','Green\ Hills\ of\ Tyrol','Johnnie\ Scobie',
+                'Marine\ Corp\ Hymn','Scots\ Wha\ Hae','Scots\ Wha\ Hae\ (Slow)'
+                ];
               let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>PDF</th><th>BWW</th></tr>'; 
               
               for (let i=0; i<music.length; i++) {
