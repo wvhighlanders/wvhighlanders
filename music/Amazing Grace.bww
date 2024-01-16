@@ -1,0 +1,243 @@
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(100,100,100,150,250)
+
+TuneFormat,(1,0,M,C,750,1500,750,500,P,1,0)
+
+TuneTempo,90
+
+"Amazing Grace",(T,C,0,0,Arial,15,700,0,0,18,0,0,0)
+
+
+"Hymn",(Y,L,0,0,Arial,12,400,0,0,18,0,0,0)
+
+
+"WVHighlanders Setting",(M,R,0,0,Arial,12,400,0,0,18,0,0,0)
+
+
+"Transcribed by Piper Matthew Taylor",(F,L,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+
+"10/7/2003",(F,R,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+
+
+& sharpf sharpc 3_4 	I!'' gg LAr_8  Dl_8
+!	gstd D_2 	gg Fr_8 Er_16  Dl_16	
+!	dbf  F_2		gg Fr_8  El_8
+!	thrd D_2 		gg B_4 
+!	strlg LA_2 	gg LAr_8  Dl_8 !t
+
+& sharpf sharpc  		gstd D_2			 gg Fr_8 Er_16  Dl_16	
+!	dbf F_2 		gg Er_8 Fl_8
+! dbha HA_2 'ha
+!	gg HA_2		Fr_8 HAl_8 !I
+
+
+& sharpf sharpc	gg HA_2	hdbf Fr_8 Er_16  Dl_16		
+!	dbf F_2 gg Fr_8 El_8
+!	thrd D_2		 gg B_4 		
+!	strlg  LA_2  	gg LAr_8 Dl_8 !t
+
+& sharpf sharpc	gstd D_2 	gg Fr_8 Er_16 Dl_16
+!	dbf F_2		gg E_4
+'1 !				thrd D_2 'd
+!	gstd D_2 ! _' '2  	dbe E_2 'e
+!	thrd D_2 _' ''!I
+
+Bagpipe Reader:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(100,100,100,150,250)
+
+TuneFormat,(1,0,M,C,750,1500,750,500,P,1,0)
+
+TuneTempo,90
+
+"Amazing Grace",(T,C,0,0,Arial,15,700,0,0,18,0,0,0)
+
+
+"Hymn",(Y,L,0,0,Arial,12,400,0,0,18,0,0,0)
+
+
+"WVHighlanders Seconds",(M,R,0,0,Arial,12,400,0,0,18,0,0,0)
+
+
+"Transcribed by Piper Matthew Taylor",(F,L,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+
+"10/7/2003",(F,R,0,0,Times New Roman,11,400,0,0,18,0,0,0)
+
+
+& sharpf sharpc 3_4 	 gg LAr_8  Dl_8
+!	gstd D_2 	gg Dr_8 Br_16  LAl_16	
+!	thrd D_2		gg Dr_8  Cl_8
+!	gg B_2 		LG_4 
+!	gg LA_2 	gg LAr_8  Dl_8 !t
+
+& sharpf sharpc  		gstd D_2			 gg Dr_8 Br_16  LAl_16	
+!	thrd D_2		Cr_8  Dl_8
+! 	gg C_2		thrd D_4
+!	gg E_2		Dr_8 Fl_8 !I
+
+
+& sharpf sharpc	gg F_2	Dr_8 Br_16  LAl_16		
+!	thrd D_2 gg Dr_8 Cl_8
+!	gg B_2	LG_4 		
+!	gg  LA_2  	gg LAr_8 Dl_8 !t
+
+& sharpf sharpc	gstd D_2			 gg Dr_8 Br_16  LAl_16
+!	thrd D_2		C_4
+!	dbb B_2 'b
+!	strlg LA_2 !I
+
+Bagpipe Music Writer Gold:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,100,80,250)
+
+TuneFormat,(1,0,M,L,500,500,500,500,P,0,0)
+
+TuneTempo,90
+
+"Amazing Grace",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+
+"Hymn",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+
+" Alternative Seconds",(M,R,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+& sharpf sharpc sharpf sharpc 3_4 	gg LAr_8 Dl_8			gg LA_2
+!	gg Dr_8 Cr_16  Bl_16		thrd D_2
+!	dbd Dr_8 Cl_8			dbb B_2
+!	eg LG_4 			gg C_2
+
+!	gg LAr_8 Dl_8			gg LA_2
+!	gg Dr_8 Er_16  Fl_16		thrd D_2
+!	gg Cr_8 Dl_8			dbe E_2 
+!	gg Er_8 Dl_8			dbc C_2 !I
+
+& sharpf sharpc sharpf sharpc	gg Br_8 Cl_8			thrd D_2
+!	gg Dr_8 Cr_16  Bl_16		thrd D_4 	E_4
+!	gg F_4				dbhg HG_2
+!	dbhg HG_4 			tg  C_2 
+
+!	gg LAr_8   Dl_8			dbb B_2
+!	strlg B_4			grp C_2
+!	dbhg HG_4			tg F_2
+!	^tf F_4				eg F_2 !I
+
+Bagpipe Music Writer Gold:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,100,80,250)
+
+TuneFormat,(1,0,M,L,500,500,500,500,P,0,0)
+
+TuneTempo,90
+
+"Amazing Grace",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+
+"Hymn",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+
+"Thirds",(M,R,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+
+& sharpf sharpc sharpf sharpc 3_4 	gg LAr_8   Dl_8			gg F_2
+!	gg LAr_8 Dl_8			gg LA_2
+!	brl LA_4			dbf F_2
+!	dbhg  HG_4 			tg C_2 
+
+!	gg LAr_8   Dl_8			gg F_2
+!	gg LAr_8 Dl_8			gg LA_2
+!	gg LAr_8 Bl_8			grp C_2 
+!	D_4				dbe E_2 !I
+
+& sharpf sharpc sharpf sharpc	gg Dr_8 El_8			gg LG_2
+!	gg LAr_8 Dl_8			gg LA_2
+!	dbd Dr_8 Cl_8			dbb B_2
+!	eg LA_4 			gg E_2 
+
+!	gg C_4				gg LG_2
+!	gg Dr_8 Cr_16 Bl_16		gg LA_4	B_4
+!	gg C_4				gg LA_2
+!	^tla LA_4			brl LA_2 !I
+
+Bagpipe Music Writer Gold:1.0
+
+MIDINoteMappings,(54,56,58,59,61,63,64,66,68,56,58,60,61,63,65,66,68,70,55,57,59,60,62,64,65,67,69)
+
+FrequencyMappings,(370,415,466,494,554,622,659,740,831,415,466,523,554,622,699,740,831,932,392,440,494,523,587,659,699,784,880)
+
+InstrumentMappings,(71,71,45,33,1000,60,70)
+
+GracenoteDurations,(20,40,30,50,100,200,800,1200,250,250,250,500,200)
+
+FontSizes,(90,100,100,80,250)
+
+TuneFormat,(1,0,M,L,500,500,500,500,P,0,0)
+
+TuneTempo,90
+
+"Amazing Grace",(T,L,0,0,Times New Roman,16,700,0,0,18,0,0,0)
+
+
+"Hymn",(Y,C,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+
+"fourths",(M,R,0,0,Times New Roman,14,400,0,0,18,0,0,0)
+
+
+"arr: Dave Palladino",(F,R,0,0,Times New Roman,12,400,0,0,18,0,0,0)
+
+
+& sharpf sharpc sharpf sharpc 3_4
+I!''	gg LAr_8  Dl_8			gstd D_2
+!	gg Fr_8 Er_16 Dl_16		dbf F_2
+!	gg Fr_8 El_8			thrd D_2
+!	gstd D_4 			gg LA_2 
+
+!	gg LAr_8  Dl_8			gstd D_2
+!	gg Fr_8 Er_16 Dl_16		gg F_2
+!	gg Er_8 Fl_8			dbha HA_2 
+!	LG_4				gg LA_2 !I
+
+& sharpf sharpc sharpf sharpc	gg Fr_8 HAl_8			gg HA_2
+!	 Fr_8 Er_16 Dl_16		dbf F_2
+!	LA_4				thrd D_2
+!	gg E_4 				gg LA_2 
+
+!	gg LAr_8 Dl_8			thrd D_2
+!	gg LAr_8 Dl_8			gg LA_2
+!	brl LA_4			thrd D_2
+!	^td D_4			gstd D_2 !I
+   b. 

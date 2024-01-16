@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WV Highlanders of Davis & Elkins College</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+   <body>
+    <div class="tartan">
+      <div class="main">
+         <input type="password" placeholder="passcode" id="pc">
+         <button onclick="protectpasscode()">Unlock</button>
+         <script>
+            function protectpasscode() {
+              const result = document.getElementById("pc").value;
+              const music = [
+                "Amazing Grace","An Dro", "Atholl and Breadalbane Gathering"
+              ];
+              let musicList = "<table id='musicTable'>"; 
+              for (let i=0; i<music.length; i++) {
+                musicList += "<tr><td>" + music[i] + "</td><td><a href='music/" + music[i] + ".pdf' target='_blank'>PDF</a></td>" +
+                  "<td><a href='music/" + music[i] + ".bww' target='_blank'>BWW</a></td></tr>";
+              }
+              musicList += "</table>";
+              const passcode = 'bagpipe';
+              const space = '';
+              if (result == space) {
+                alert("Type passcode")
+              } else {
+                if (result == passcode) {
+                  document.write("<h1>Music</h1>" + musicList);
+                } else {
+                  alert("Incorrect Passcode");
+                  location.reload();
+                }
+              }
+            }
+         </script>
+      </div>
+    </div>
+   </body>
+</html>
