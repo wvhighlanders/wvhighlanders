@@ -18,15 +18,19 @@
                 ["An Dro", 1], 
                 ["Atholl Highlanders", 3]
               ];
-              const header = "<html><head><title>WV Highlanders of Davis & Elkins College</title><link rel='stylesheet' href='index.css'><script src='https://kit.fontawesome.com/44341eb78c.js' crossorigin='anonymous'></script></head><body><div class='tartan'><div class='main'><h1>Music</h1>";
+              let header = "<html><head><title>WV Highlanders of Davis & Elkins College</title>"
+              header += "<link rel='stylesheet' href='index.css'>"
+              header += "<script src='https://kit.fontawesome.com/44341eb78c.js' crossorigin='anonymous'></script></head>"
+              header += "<body><div class='tartan'><div class='main'><h1>Music</h1>";
               let musicList = "<table id='musicTable'><tr><th>Tune</th><th>Difficulty</th><th>PDF</th><th>BWW</th></tr>"; 
+              
               for (let i=0; i<music.length; i++) {
                 musicList += "<tr><td>" + music[i][0] + "</td><td>"
                 for (let j=1; j<=music[i][1]; j++) {
                   musicList += "<i class='fa-solid fa-star'></i>";
                 }
-                musicList += "</td><td><a href='music/" + music[i][0] + ".pdf' target='_blank'>PDF</a></td>" +
-                  "<td><a href='music/" + music[i][0] + ".bww' target='_blank'>BWW</a></td></tr>";
+                musicList += "</td><td><a href='music/" + music[i][0] + ".pdf' target='_blank'>PDF</a></td>"
+                musicList += "<td><a href='music/" + music[i][0] + ".bww' target='_blank'>BWW</a></td></tr>";
               }
               musicList += "</table>";
               const passcode = 'bagpipe';
