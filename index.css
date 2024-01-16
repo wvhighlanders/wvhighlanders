@@ -61,7 +61,7 @@ img {
   flex-direction: column;
 }
 
-.musicTable {
+td,th {
   color: black;
   border: 1px red;
 }
