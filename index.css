@@ -61,7 +61,7 @@ img {
   flex-direction: column;
 }
 
-td,th {
+.mt {
   color: black;
   border: 1px red;
 }

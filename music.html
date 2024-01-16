@@ -13,7 +13,7 @@
             function protectpasscode() {
               const result = document.getElementById('pc').value;
               const music = ['Amazing\ Grace','An\ Dro','Atholl\ Highlanders'];
-              let musicList = '<table id="musicTable"><tr><th>Tune</th><th>PDF</th><th>BWW</th></tr>'; 
+              let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>PDF</th><th>BWW</th></tr>'; 
               
               for (let i=0; i<music.length; i++) {
                 musicList += '<tr><td>' + music[i] + '</td><td><a href="music/' + music[i] + '.pdf" target="_blank">PDF</a></td>'
