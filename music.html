@@ -7,37 +7,26 @@
    <body>
     <div class='tartan'>
       <div class='main'>
-        <html>
-          <head>
-            <link rel="stylesheet" href="index.css">
-          </head>
-          <body>
-            <div class="tartan">
-              <div class="main">
-                <h1>Music</h1>
-                <div class="nav">
-                  <a href="index.html">Home</a> | <a href="upcoming.html">Upcoming Events</a> | Music | <a href="dress.html">Dress</a>
-                </div>
-                <script>
-                  const music = ['Amazing\ Grace','An\ Dro','Atholl\ Highlanders','Auld\ Lang\ Syne','Barren\ Rocks\ of\ Aden',
-                    'Black\ Bear','Blue\ Bells\ of\ Scotland','Brown\ Haired\ Maiden','Cabar\ Feidh','Calypso\ Piper','Chariots\ of\ Fire',
-                    'Children','Cock\ of\ the\ North','Cockney\ Jocks','Cork\ Hill','Crags\ of\ Tumbledown\ Mountain','Danny\ Boy',
-                    'Flower\ of\ Scotland','Forty-Second\ Regiment','Going\ Home','Green\ Hills\ of\ Tyrol','Johnnie\ Scobie',
-                    'Marine\ Corp\ Hymn','Scots\ Wha\ Hae','Scots\ Wha\ Hae\ (Slow)'
-                    ];
-                  let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>PDF</th><th>BWW</th></tr>'; 
-                  
-                  for (let i=0; i<music.length; i++) {
-                    musicList += '<tr><td>' + music[i] + '</td><td><a href="music/' + music[i] + '.pdf" target="_blank">PDF</a></td>'
-                    musicList += '<td><a href="music/' + music[i] + '.bww" target="_blank">BWW</a></td></tr>';
-                  }
-                  musicList += '</table>';
-                  document.write(musicList);
-                </script>
-              </div>
-            </div>
-          </body>
-        </html>
+        <h1>Music</h1>
+        <div class="nav">
+          <a href="index.html">Home</a> | <a href="upcoming.html">Upcoming Events</a> | Music | <a href="dress.html">Dress</a>
+        </div>
+        <script>
+          const music = ['Amazing\ Grace','An\ Dro','Atholl\ Highlanders','Auld\ Lang\ Syne','Barren\ Rocks\ of\ Aden',
+            'Black\ Bear','Blue\ Bells\ of\ Scotland','Brown\ Haired\ Maiden','Cabar\ Feidh','Calypso\ Piper','Chariots\ of\ Fire',
+            'Children','Cock\ of\ the\ North','Cockney\ Jocks','Cork\ Hill','Crags\ of\ Tumbledown\ Mountain','Danny\ Boy',
+            'Flower\ of\ Scotland','Forty-Second\ Regiment','Going\ Home','Green\ Hills\ of\ Tyrol','Johnnie\ Scobie',
+            'Marine\ Corp\ Hymn','Scots\ Wha\ Hae','Scots\ Wha\ Hae\ (Slow)'
+            ];
+          let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>PDF</th><th>BWW</th></tr>'; 
+          
+          for (let i=0; i<music.length; i++) {
+            musicList += '<tr><td>' + music[i] + '</td><td><a href="music/' + music[i] + '.pdf" target="_blank">PDF</a></td>'
+            musicList += '<td><a href="music/' + music[i] + '.bww" target="_blank">BWW</a></td></tr>';
+          }
+          musicList += '</table>';
+          document.write(musicList);
+        </script>
       </div>
     </div>
    </body>
