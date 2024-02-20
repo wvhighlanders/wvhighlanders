@@ -9,20 +9,43 @@
       <div class='main'>
         <h1>Music</h1>
         <div class="nav">
-          <a href="index.html">Home</a> | <a href="upcoming.html">Upcoming Events</a> | Music | <a href="dress.html">Dress</a> | <a href="contact.html">Contact</a>
+          <a href="index.html">Home</a> | <a href="upcoming.html">Upcoming Events</a> | Music | <a href="dress.html">Dress</a> 
         </div>
+        <p></p>
+        <p>These tunes are provided for the use of our members. If you would like to use them on your own website, please contact us.</p>
         <script>
-          const music = ['Amazing\ Grace','An\ Dro','Atholl\ Highlanders','Auld\ Lang\ Syne','Barren\ Rocks\ of\ Aden',
-            'Black\ Bear','Blue\ Bells\ of\ Scotland','Brown\ Haired\ Maiden','Cabar\ Feidh','Calypso\ Piper','Chariots\ of\ Fire',
-            'Children','Cock\ of\ the\ North','Cockney\ Jocks','Cork\ Hill','Crags\ of\ Tumbledown\ Mountain','Danny\ Boy',
-            'Flower\ of\ Scotland','Forty-Second\ Regiment','Going\ Home','Green\ Hills\ of\ Tyrol','Johnnie\ Scobie',
-            'Marine\ Corp\ Hymn','Scots\ Wha\ Hae','Scots\ Wha\ Hae\ (Slow)'
+          const music = [
+            {tune:'Amazing\ Grace'},
+            {tune:'An\ Dro'},
+            {tune:'Atholl\ Highlanders'},
+            {tune:'Auld\ Lang\ Syne'},
+            {tune:'Barren\ Rocks\ of\ Aden'},
+            {tune:'Black\ Bear'}
+            {tune:'Blue\ Bells\ of\ Scotland'},
+            {tune:'Brown\ Haired\ Maiden'},
+            {tune:'Cabar\ Feidh'},
+            {tune:'Calypso\ Piper'},
+            {tune:'Chariots\ of\ Fire'},
+            {tune:'Children'},
+            {tune:'Cock\ of\ the\ North'},
+            {tune:'Cockney\ Jocks'},
+            {tune:'Cork\ Hill'},
+            {tune:'Crags\ of\ Tumbledown\ Mountain'},
+            {tune:'Danny\ Boy'},
+            {tune:'Flower\ of\ Scotland'},
+            {tune:'Forty-Second\ Regiment'},
+            {tune:'Going\ Home'},
+            {tune:'Green\ Hills\ of\ Tyrol'},
+            {tune:'Johnnie\ Scobie'},
+            {tune:'Marine\ Corp\ Hymn'},
+            {tune:'Scots\ Wha\ Hae'},
+            {tune:'Scots\ Wha\ Hae\ (Slow)'}
             ];
           let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>PDF</th><th>BWW</th></tr>'; 
           
           for (let i=0; i<music.length; i++) {
-            musicList += '<tr><td>' + music[i] + '</td><td><a href="music/' + music[i] + '.pdf" target="_blank">PDF</a></td>'
-            musicList += '<td><a href="music/' + music[i] + '.bww" target="_blank">BWW</a></td></tr>';
+            musicList += '<tr><td>' + music[i].tune + '</td><td><a href="music/' + music[i].tune + '.pdf" target="_blank">PDF</a></td>'
+            musicList += '<td><a href="music/' + music[i].tune + '.bww" target="_blank">BWW</a></td></tr>';
           }
           musicList += '</table>';
           document.write(musicList);
