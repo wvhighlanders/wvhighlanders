@@ -12,44 +12,70 @@
           <a href="index.html">Home</a> | <a href="upcoming.html">Upcoming Events</a> | Music | <a href="dress.html">Dress</a> | <a href="contact.html">Contact</a>
         </div>
         <p></p>
-        <p>These tunes are provided for the use of our members. If you would like to use them on your own website, please contact us.</p>
+        <p>These tunes are provided for the use of our members. If you would like to use them on your own website, please contact us. Full tune list and drummers' dots coming soon.</p>
+        <p>Tune list abbreviations:
+          <ul>
+            <li>A. Apprentice Tunes: These tunes should be learned during a piper's or drummer's apprentice period with the band.</li>
+            <li>J. Journeyman Tunes: These tunes are for those who have played with the band for a while, and are ready to learn more.</li>
+            <li>M. Master Tunes: These tunes are for those who have played with the band for a long time. They will be more difficult to learn.</li>
+            <li>X. Extraordinary Tunes: These tunes are extra tunes that we rarely play, but which might provide a chance to hone your skills.</li>
+          </ul>
+        </p>
+        <p>Common tune sets listed after the tunes list.</p>
         <script>
           const music = [
-            {tune:'Amazing\ Grace'},
-            {tune:'An\ Dro'},
-            {tune:'Atholl\ Highlanders'},
-            {tune:'Auld\ Lang\ Syne'},
-            {tune:'Barren\ Rocks\ of\ Aden'},
-            {tune:'Black\ Bear'},
-            {tune:'Blue\ Bells\ of\ Scotland'},
-            {tune:'Brown\ Haired\ Maiden'},
-            {tune:'Cabar\ Feidh'},
-            {tune:'Calypso\ Piper'},
-            {tune:'Chariots\ of\ Fire'},
-            {tune:'Children'},
-            {tune:'Cock\ of\ the\ North'},
-            {tune:'Cockney\ Jocks'},
-            {tune:'Cork\ Hill'},
-            {tune:'Crags\ of\ Tumbledown\ Mountain'},
-            {tune:'Danny\ Boy'},
-            {tune:'Flower\ of\ Scotland'},
-            {tune:'Forty-Second\ Regiment'},
-            {tune:'Going\ Home'},
-            {tune:'Green\ Hills\ of\ Tyrol'},
-            {tune:'Johnnie\ Scobie'},
-            {tune:'Marine\ Corp\ Hymn'},
-            {tune:'Scots\ Wha\ Hae'},
-            {tune:'Scots\ Wha\ Hae\ (Slow)'}
+            {tune:'Amazing\ Grace', tune_list:'A', tune_sets:'FWH'},
+            {tune:'An\ Dro', tune_list:'X', tune_sets:''},
+            {tune:'Atholl\ Highlanders', tune_list:'M', tune_sets:''},
+            {tune:'Auld\ Lang\ Syne', tune_list:'A', tune_sets:'F'},
+            {tune:'Barren\ Rocks\ of\ Aden', tune_list:'J', tune_sets:''},
+            {tune:'Black\ Bear', tune_list:'M', tune_sets:'BB-StB'},
+            {tune:'Blue\ Bells\ of\ Scotland', tune_list:'A', tune_sets:'F, MH-BBS'},
+            {tune:'Brown\ Haired\ Maiden', tune_list:'J', tune_sets:'DC-BR-BHM'},
+            {tune:'Cabar\ Feidh', tune_list:'X', tune_sets:''},
+            {tune:'Calypso\ Piper', tune_list:'M', tune_sets:''},
+            {tune:'Chariots\ of\ Fire', tune_list:'X', tune_sets:''},
+            {tune:'Children', tune_list:'J', tune_sets:''},
+            {tune:'Cock\ of\ the\ North', tune_list:'M', tune_sets:''},
+            {tune:'Cockney\ Jocks', tune_list:'J', tune_sets:''},
+            {tune:'Cork\ Hill', tune_list:'X', tune_sets:''},
+            {tune:'Crags\ of\ Tumbledown\ Mountain', tune_list:'J', tune_sets:''},
+            {tune:'Danny\ Boy', tune_list:'X', tune_sets:''},
+            {tune:'Flower\ of\ Scotland', tune_list:'A', tune_sets:''},
+            {tune:'Forty-Second\ Regiment', tune_list:'A', tune_sets:'PiR'},
+            {tune:'Going\ Home', tune_list:'A', tune_sets:'FWH'},
+            {tune:'Green\ Hills\ of\ Tyrol', tune_list:'A', tune_sets:'FWH, GH-WtBO'},
+            {tune:'Johnnie\ Scobie', tune_list:'J', tune_sets:'F'},
+            {tune:'Marine\ Corp\ Hymn', tune_list:'A', tune_sets:'STAF, MH-BBS'},
+            {tune:'Scots\ Wha\ Hae', tune_list:'A', tune_sets:'SwH-StB'},
+            {tune:'Scots\ Wha\ Hae\ (Slow)', tune_list:'A', tune_sets:'SM'},
             ];
-          let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>PDF</th><th>BWW</th></tr>'; 
+          let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>PDF</th><th>BWW</th><th>Tune List</th><th>Sets</th></tr>'; 
           
           for (let i=0; i<music.length; i++) {
             musicList += '<tr><td>' + music[i].tune + '</td><td><a href="music/' + music[i].tune + '.pdf" target="_blank">PDF</a></td>'
-            musicList += '<td><a href="music/' + music[i].tune + '.bww" target="_blank">BWW</a></td></tr>';
+            musicList += '<td><a href="music/' + music[i].tune + '.bww" target="_blank">BWW</a></td>'
+            musicList += '<td>' + music[i].tune_list + '</td><td>' + music[i].tune_sets + '</td></tr>';
           }
           musicList += '</table>';
           document.write(musicList);
         </script>
+        <div>
+          <h2>Tune Sets</h2>
+          <p>
+            <ul>
+              <li>F: Farewell Set: Johnnie Scobie/Blue Bells/Auld Lang Syne</li>
+              <li>FWH: Farewell With Honors: Green Hills/Going Home/Amazing Grace</li>
+              <li>BB-StB: Black Bear/Scotland the Brave</li>
+              <li>DC-BR-BHM: Drummers' Call/Barren Rocks/Brown Haired Maiden</li>
+              <li>PiR: Pass In Review: Forty-Second Regiment/Morag of Dunvegan/Wings</li>
+              <li>6/8 Set: Steamboat/A Hundred Pipers/Bonnie Dundee</li>
+              <li>STAF: Salute to the Armed Forces: Army/Navy/Coast Guard/Air Force/Marine Corps</li>
+              <li>MB-WG: Minstrel Boy/Wearing of the Green</li>
+              <li>GH-WtBO: Green Hills/When the Battle's O'er</li>
+              <li>RT-SG: Rowan Tree/Simple Gifts</li>
+            </ul>
+          </p>
       </div>
     </div>
    </body>
