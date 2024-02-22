@@ -12,7 +12,7 @@
           <a href="index.html">Home</a> | <a href="upcoming.html">Upcoming Events</a> | Music | <a href="dress.html">Dress</a> | <a href="contact.html">Contact</a>
         </div>
         <p></p>
-        <p>These tunes are provided for the use of our members. If you would like to use them on your own website, please contact us. Full tune list and drummers' dots coming soon.</p>
+        <p>These tunes are provided for the use of our members. If you would like to use them on your own website, please contact us. Full tune list and drummers' scores coming soon. BWW are files meant to be read using Bagpipe Music Writer or Bagpipe Player software or similar.</p>
         <p>Tune list abbreviations:
           <ul>
             <li>A. Apprentice Tunes: These tunes should be learned during a piper's or drummer's apprentice period with the band.</li>
@@ -24,44 +24,47 @@
         <p>Common tune sets listed after the tunes list.</p>
         <script>
           const music = [
-            {tune:'Amazing\ Grace', tune_list:'A', tune_sets:'FWH'},
-            {tune:'An\ Dro', tune_list:'X', tune_sets:''},
-            {tune:'Atholl\ Highlanders', tune_list:'M', tune_sets:''},
-            {tune:'Auld\ Lang\ Syne', tune_list:'A', tune_sets:'F'},
-            {tune:'Barren\ Rocks\ of\ Aden', tune_list:'J', tune_sets:''},
-            {tune:'Black\ Bear', tune_list:'M', tune_sets:'BB-StB'},
-            {tune:'Blue\ Bells\ of\ Scotland', tune_list:'A', tune_sets:'F, MH-BBS'},
-            {tune:'Brown\ Haired\ Maiden', tune_list:'J', tune_sets:'DC-BR-BHM'},
-            {tune:'Cabar\ Feidh', tune_list:'X', tune_sets:''},
-            {tune:'Calypso\ Piper', tune_list:'M', tune_sets:''},
-            {tune:'Chariots\ of\ Fire', tune_list:'X', tune_sets:''},
-            {tune:'Children', tune_list:'J', tune_sets:''},
-            {tune:'Cock\ of\ the\ North', tune_list:'M', tune_sets:''},
-            {tune:'Cockney\ Jocks', tune_list:'J', tune_sets:''},
-            {tune:'Cork\ Hill', tune_list:'X', tune_sets:''},
-            {tune:'Crags\ of\ Tumbledown\ Mountain', tune_list:'J', tune_sets:'FS-CTM'},
-            {tune:'Danny\ Boy', tune_list:'X', tune_sets:''},
-            {tune:'Flower\ of\ Scotland', tune_list:'A', tune_sets:'FS-CTM'},
-            {tune:'Forty-Second\ Regiment', tune_list:'A', tune_sets:'PiR'},
-            {tune:'Going\ Home', tune_list:'A', tune_sets:'FWH'},
-            {tune:'Green\ Hills\ of\ Tyrol', tune_list:'A', tune_sets:'FWH, GH-WtBO'},
-            {tune:'Highland\ Cathedral', tune_list:'J', tune_sets:''},
-            {tune:'Highland\ Laddie', tune_list:'X', tune_sets:''},
-            {tune:'High\ Road\ to\ Gairloch', tune_list:'J', tune_sets:''},
-            {tune:'Johnnie\ Scobie', tune_list:'J', tune_sets:'F'},
-            {tune:'Last\ of\ the\ Mohicans\ (The\ Gael)', tune_list:'X', tune_sets:''},
-            {tune:'Liberton\ Pipe\ Band', tune_list:'J', tune_sets:''},
-            {tune:'Lochanside', tune_list:'X', tune_sets:''},
-            {tune:'March Du Petre', tune_list:'J', tune_sets:''},
-            {tune:'Marine\ Corp\ Hymn', tune_list:'A', tune_sets:'STAF, MH-BBS'},
-            {tune:'Mist Covered Mountains', tune_list:'X', tune_sets:''},
-            {tune:'Scots\ Wha\ Hae', tune_list:'A', tune_sets:'SwH-StB'},
-            {tune:'Scots\ Wha\ Hae\ (Slow)', tune_list:'A', tune_sets:'SM'},
+            {tune:'Amazing\ Grace', tune_type:'3/4 Slow Air', tune_list:'A', tune_sets:'FWH'},
+            {tune:'An\ Dro', tune_type:'2/4 March', tune_list:'X', tune_sets:''},
+            {tune:'Atholl\ Highlanders', tune_type:'6/8 March', tune_list:'M', tune_sets:''},
+            {tune:'Auld\ Lang\ Syne', tune_type:'4/4 March', tune_list:'A', tune_sets:'F'},
+            {tune:'Barren\ Rocks\ of\ Aden', tune_type:'2/4 March', tune_list:'J', tune_sets:''},
+            {tune:'Black\ Bear', tune_type:'2/4 March', tune_list:'M', tune_sets:'BB-StB'},
+            {tune:'Blue\ Bells\ of\ Scotland', tune_type:'2/4 March', tune_list:'A', tune_sets:'F, MH-BBS'},
+            {tune:'Brown\ Haired\ Maiden', tune_type:'2/4 March', tune_list:'J', tune_sets:'DC-BR-BHM'},
+            {tune:'Cabar\ Feidh', tune_type:'4/4 March', tune_list:'X', tune_sets:''},
+            {tune:'Calypso\ Piper', tune_type:'8/8', tune_list:'M', tune_sets:''},
+            {tune:'Chariots\ of\ Fire', tune_type:'6/8 Slow Air', tune_list:'X', tune_sets:''},
+            {tune:'Children', tune_type:'4/4 March', tune_list:'J', tune_sets:''},
+            {tune:'Cock\ of\ the\ North', tune_type:'6/8 March', tune_list:'M', tune_sets:''},
+            {tune:'Cockney\ Jocks', tune_type:'4/4 March', tune_list:'J', tune_sets:''},
+            {tune:'Cork\ Hill', tune_type:'6/8 Jig', tune_list:'X', tune_sets:''},
+            {tune:'Crags\ of\ Tumbledown\ Mountain', tune_type:'4/4 March', tune_list:'J', tune_sets:'FS-CTM'},
+            {tune:'Danny\ Boy', tune_type:'Slow Air', tune_list:'X', tune_sets:''},
+            {tune:'Flower\ of\ Scotland', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'FS-CTM'},
+            {tune:'Forty-Second\ Regiment', tune_type:'2/4 March', tune_list:'A', tune_sets:'PiR'},
+            {tune:'Going\ Home', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'FWH'},
+            {tune:'Green\ Hills\ of\ Tyrol', tune_type:'3/4 Retreat March', tune_list:'A', tune_sets:'FWH, GH-WtBO'},
+            {tune:'Highland\ Cathedral', tune_type:'4/4 Slow Air', tune_list:'J', tune_sets:''},
+            {tune:'Highland\ Laddie', tune_type:'2/4 March', tune_list:'M', tune_sets:''},
+            {tune:'High\ Road\ to\ Gairloch', tune_type:'2/4 March', tune_list:'J', tune_sets:''},
+            {tune:'Johnnie\ Scobie', tune_type:'4/4 March', tune_list:'J', tune_sets:'F'},
+            {tune:'Last\ of\ the\ Mohicans\ (The\ Gael)', tune_type:'6/8 March', tune_list:'M', tune_sets:''},
+            {tune:'Liberton\ Pipe\ Band', tune_type:'2/4 March', tune_list:'J', tune_sets:''},
+            {tune:'Lochanside', tune_type:'3/4 Retreat March', tune_list:'X', tune_sets:''},
+            {tune:'March\ Du\ Petre', tune_type:'3/4 March', tune_list:'J', tune_sets:''},
+            {tune:'Marine\ Corp\ Hymn', tune_type:'2/4 March', tune_list:'A', tune_sets:'STAF, MH-BBS'},
+            {tune:'Meeting\ of\ the\ Waters', tune_type:'4/4 Retreat March', tune_list:'M', tune_sets:''},
+            {tune:'Mingulay\ Boat\ Song', tune_type:'3/4 Slow March', tune_list:'J', tune_sets:''},
+            {tune:'Minstrel\ Boy', tune_type:'4/4 March', tune_list:'A', tune_sets:'MB-WG'},
+            {tune:'Mist\ Covered\ Mountains', tune_type:'6/8 Slow Air', tune_list:'X', tune_sets:''},
+            {tune:'Scots\ Wha\ Hae', tune_type:'4/4 March', tune_list:'A', tune_sets:'SwH-StB'},
+            {tune:'Scots\ Wha\ Hae\ (Slow)', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'SM'},
             ];
-          let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>PDF</th><th>BWW</th><th>Tune List</th><th>Sets</th></tr>'; 
+          let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>Type</th><th>PDF</th><th>BWW</th><th>Tune List</th><th>Sets</th></tr>'; 
           
           for (let i=0; i<music.length; i++) {
-            musicList += '<tr><td>' + music[i].tune + '</td><td><a href="music/' + music[i].tune + '.pdf" target="_blank">PDF</a></td>'
+            musicList += '<tr><td>' + music[i].tune + '</td><td>' + music[i].tune_type + '</td><td><a href="music/' + music[i].tune + '.pdf" target="_blank">PDF</a></td>'
             musicList += '<td><a href="music/' + music[i].tune + '.bww" target="_blank">BWW</a></td>'
             musicList += '<td>' + music[i].tune_list + '</td><td>' + music[i].tune_sets + '</td></tr>';
           }
@@ -80,6 +83,8 @@
               <li>PiR: Pass In Review: Forty-Second Regiment/Morag of Dunvegan/Wings</li>
               <li>6/8 Set: Steamboat/A Hundred Pipers/Bonnie Dundee</li>
               <li>STAF: Salute to the Armed Forces: Army/Navy/Coast Guard/Air Force/Marine Corps</li>
+              <li>SM: Slow March Set: WV Highlanders' 50th Anniversary March/Scots Wha Hae (Slow)/Scotland the Brave
+              <li>SwH-StB: Scots Wha Hae/Scotland the Brave (often the first set we play in a parade)</li>
               <li>MB-WG: Minstrel Boy/Wearing of the Green</li>
               <li>GH-WtBO: Green Hills/When the Battle's O'er</li>
               <li>RT-SG: Rowan Tree/Simple Gifts</li>
