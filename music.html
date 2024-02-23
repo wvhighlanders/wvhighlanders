@@ -24,49 +24,56 @@
         <p>Common tune sets listed after the tunes list.</p>
         <script>
           const music = [
-            {tune:'Amazing\ Grace', tune_type:'3/4 Slow Air', tune_list:'A', tune_sets:'FWH'},
-            {tune:'An\ Dro', tune_type:'2/4 March', tune_list:'X', tune_sets:''},
-            {tune:'Atholl\ Highlanders', tune_type:'6/8 March', tune_list:'M', tune_sets:''},
-            {tune:'Auld\ Lang\ Syne', tune_type:'4/4 March', tune_list:'A', tune_sets:'F'},
-            {tune:'Barren\ Rocks\ of\ Aden', tune_type:'2/4 March', tune_list:'J', tune_sets:''},
-            {tune:'Black\ Bear', tune_type:'2/4 March', tune_list:'M', tune_sets:'BB-StB'},
-            {tune:'Blue\ Bells\ of\ Scotland', tune_type:'2/4 March', tune_list:'A', tune_sets:'F, MH-BBS'},
-            {tune:'Brown\ Haired\ Maiden', tune_type:'2/4 March', tune_list:'J', tune_sets:'DC-BR-BHM'},
-            {tune:'Cabar\ Feidh', tune_type:'4/4 March', tune_list:'X', tune_sets:''},
-            {tune:'Calypso\ Piper', tune_type:'8/8', tune_list:'M', tune_sets:''},
-            {tune:'Chariots\ of\ Fire', tune_type:'6/8 Slow Air', tune_list:'X', tune_sets:''},
-            {tune:'Children', tune_type:'4/4 March', tune_list:'J', tune_sets:''},
-            {tune:'Cock\ of\ the\ North', tune_type:'6/8 March', tune_list:'M', tune_sets:''},
-            {tune:'Cockney\ Jocks', tune_type:'4/4 March', tune_list:'J', tune_sets:''},
-            {tune:'Cork\ Hill', tune_type:'6/8 Jig', tune_list:'X', tune_sets:''},
-            {tune:'Crags\ of\ Tumbledown\ Mountain', tune_type:'4/4 March', tune_list:'J', tune_sets:'FS-CTM'},
-            {tune:'Danny\ Boy', tune_type:'4/4 Slow Air', tune_list:'X', tune_sets:''},
-            {tune:'Flower\ of\ Scotland', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'FS-CTM'},
-            {tune:'Forty-Second\ Regiment', tune_type:'2/4 March', tune_list:'A', tune_sets:'PiR'},
-            {tune:'Going\ Home', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'FWH'},
-            {tune:'Green\ Hills\ of\ Tyrol', tune_type:'3/4 Retreat March', tune_list:'A', tune_sets:'FWH, GH-WtBO'},
-            {tune:'Highland\ Cathedral', tune_type:'4/4 Slow Air', tune_list:'J', tune_sets:''},
-            {tune:'Highland\ Laddie', tune_type:'2/4 March', tune_list:'M', tune_sets:''},
-            {tune:'High\ Road\ to\ Gairloch', tune_type:'2/4 March', tune_list:'J', tune_sets:''},
-            {tune:'Johnnie\ Scobie', tune_type:'4/4 March', tune_list:'J', tune_sets:'F'},
-            {tune:'Last\ of\ the\ Mohicans\ (The\ Gael)', tune_type:'6/8 March', tune_list:'M', tune_sets:''},
-            {tune:'Liberton\ Pipe\ Band', tune_type:'2/4 March', tune_list:'J', tune_sets:''},
-            {tune:'Lochanside', tune_type:'3/4 Retreat March', tune_list:'X', tune_sets:''},
-            {tune:'March\ Du\ Petre', tune_type:'3/4 March', tune_list:'J', tune_sets:''},
-            {tune:'Marine\ Corp\ Hymn', tune_type:'2/4 March', tune_list:'A', tune_sets:'STAF, MH-BBS'},
-            {tune:'Meeting\ of\ the\ Waters', tune_type:'4/4 Retreat March', tune_list:'M', tune_sets:''},
-            {tune:'Mingulay\ Boat\ Song', tune_type:'3/4 Slow March', tune_list:'J', tune_sets:''},
-            {tune:'Minstrel\ Boy', tune_type:'4/4 March', tune_list:'A', tune_sets:'MB-WG'},
-            {tune:'Mist\ Covered\ Mountains', tune_type:'6/8 Slow Air', tune_list:'X', tune_sets:''},
-            {tune:'Morag\ of\ Dunvegan', tune_type:'6/8 Slow March', tune_list:'J', tune_sets:'PiR'},
-            {tune:'Scots\ Wha\ Hae', tune_type:'4/4 March', tune_list:'A', tune_sets:'SwH-StB'},
-            {tune:'Scots\ Wha\ Hae\ (Slow)', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'SM'},
+            {tune:'Amazing\ Grace', tune_type:'3/4 Slow Air', tune_list:'A', tune_sets:'FWH', video:''},
+            {tune:'An\ Dro', tune_type:'2/4 March', tune_list:'X', tune_sets:'', video:''},
+            {tune:'Atholl\ Highlanders', tune_type:'6/8 March', tune_list:'M', tune_sets:'', video:''},
+            {tune:'Auld\ Lang\ Syne', tune_type:'4/4 March', tune_list:'A', tune_sets:'F', video:''},
+            {tune:'Barren\ Rocks\ of\ Aden', tune_type:'2/4 March', tune_list:'J', tune_sets:'', video:''},
+            {tune:'Black\ Bear', tune_type:'2/4 March', tune_list:'M', tune_sets:'BB-StB', video:''},
+            {tune:'Blue\ Bells\ of\ Scotland', tune_type:'2/4 March', tune_list:'A', tune_sets:'F, MH-BBS', video:''},
+            {tune:'Brown\ Haired\ Maiden', tune_type:'2/4 March', tune_list:'J', tune_sets:'DC-BR-BHM', video:''},
+            {tune:'Cabar\ Feidh', tune_type:'4/4 March', tune_list:'X', tune_sets:'', video:''},
+            {tune:'Calypso\ Piper', tune_type:'8/8', tune_list:'M', tune_sets:'', video:''},
+            {tune:'Chariots\ of\ Fire', tune_type:'6/8 Slow Air', tune_list:'X', tune_sets:'', video:''},
+            {tune:'Children', tune_type:'4/4 March', tune_list:'J', tune_sets:'', video:''},
+            {tune:'Cock\ of\ the\ North', tune_type:'6/8 March', tune_list:'M', tune_sets:'', video:''},
+            {tune:'Cockney\ Jocks', tune_type:'4/4 March', tune_list:'J', tune_sets:'', video:''},
+            {tune:'Cork\ Hill', tune_type:'6/8 Jig', tune_list:'X', tune_sets:'', video:''},
+            {tune:'Crags\ of\ Tumbledown\ Mountain', tune_type:'4/4 March', tune_list:'J', tune_sets:'FS-CTM', video:''},
+            {tune:'Danny\ Boy', tune_type:'4/4 Slow Air', tune_list:'X', tune_sets:'', video:''},
+            {tune:'Flower\ of\ Scotland', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'FS-CTM', video:''},
+            {tune:'Forty-Second\ Regiment', tune_type:'2/4 March', tune_list:'A', tune_sets:'PiR', video:''},
+            {tune:'Going\ Home', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'FWH', video:''},
+            {tune:'Green\ Hills\ of\ Tyrol', tune_type:'3/4 Retreat March', tune_list:'A', tune_sets:'FWH, GH-WtBO', video:''},
+            {tune:'Highland\ Cathedral', tune_type:'4/4 Slow Air', tune_list:'J', tune_sets:'', video:''},
+            {tune:'Highland\ Laddie', tune_type:'2/4 March', tune_list:'M', tune_sets:'', video:''},
+            {tune:'High\ Road\ to\ Gairloch', tune_type:'2/4 March', tune_list:'J', tune_sets:'', video:''},
+            {tune:'Johnnie\ Scobie', tune_type:'4/4 March', tune_list:'J', tune_sets:'F', video:''},
+            {tune:'Last\ of\ the\ Mohicans\ (The\ Gael)', tune_type:'6/8 March', tune_list:'M', tune_sets:'', video:''},
+            {tune:'Liberton\ Pipe\ Band', tune_type:'2/4 March', tune_list:'J', tune_sets:'', video:''},
+            {tune:'Lochanside', tune_type:'3/4 Retreat March', tune_list:'X', tune_sets:'', video:''},
+            {tune:'March\ Du\ Petre', tune_type:'3/4 March', tune_list:'J', tune_sets:'', video:''},
+            {tune:'Marine\ Corp\ Hymn', tune_type:'2/4 March', tune_list:'A', tune_sets:'STAF, MH-BBS', video:''},
+            {tune:'Meeting\ of\ the\ Waters', tune_type:'4/4 Retreat March', tune_list:'M', tune_sets:'', video:''},
+            {tune:'Mingulay\ Boat\ Song', tune_type:'3/4 Slow March', tune_list:'J', tune_sets:'', video:''},
+            {tune:'Minstrel\ Boy', tune_type:'4/4 March', tune_list:'A', tune_sets:'MB-WG', video:''},
+            {tune:'Mist\ Covered\ Mountains', tune_type:'6/8 Slow Air', tune_list:'X', tune_sets:'', video:''},
+            {tune:'Morag\ of\ Dunvegan', tune_type:'6/8 Slow March', tune_list:'J', tune_sets:'PiR', video:''},
+            {tune:'Rowan\ Tree', tune_type:'4/4 March', tune_list:'A', tune_sets:'RT-SG', video:''},
+            {tune:'Scots\ Wha\ Hae', tune_type:'4/4 March', tune_list:'A', tune_sets:'SwH-StB', video:''},
+            {tune:'Scots\ Wha\ Hae\ (Slow)', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'SM', video:''},
             ];
-          let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>Type</th><th>PDF</th><th>BWW</th><th>Tune List</th><th>Sets</th></tr>'; 
+          let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>Type</th><th>PDF</th><th>BWW</th><th>Video</th><th>Tune List</th><th>Sets</th></tr>'; 
           
           for (let i=0; i<music.length; i++) {
-            musicList += '<tr><td>' + music[i].tune + '</td><td>' + music[i].tune_type + '</td><td><a href="music/' + music[i].tune + '.pdf" target="_blank">PDF</a></td>'
-            musicList += '<td><a href="music/' + music[i].tune + '.bww" target="_blank">BWW</a></td>'
+            musicList += '<tr><td>' + music[i].tune + '</td><td>' + music[i].tune_type + '</td><td><a href="music/';
+            musicList += music[i].tune + '.pdf" target="_blank">PDF</a></td>';
+            musicList += '<td><a href="music/' + music[i].tune + '.bww" target="_blank">BWW</a></td>';
+            if (music[i].video!= '') {
+              musicList += '<td><a href="' + music[i].video + '" target="_blank">Video</a></td>';
+            } else {
+              musicList += '<td></td>';
+            }
             musicList += '<td>' + music[i].tune_list + '</td><td>' + music[i].tune_sets + '</td></tr>';
           }
           musicList += '</table>';
