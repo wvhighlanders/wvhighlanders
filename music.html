@@ -3,6 +3,7 @@
   <head>
     <title>WV Highlanders of Davis & Elkins College</title>
     <link rel='stylesheet' href='index.css'>
+    <script src="sorttable.js"></script>
   </head>
    <body>
     <div class='tartan'>
@@ -67,7 +68,7 @@
             {tune:'Scots\ Wha\ Hae\ (Slow)', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'SM', video:''},
             {tune:'79ths\ Farewell\ to\ Gibraltar', tune_type:'2/4 March', tune_list:'M', tune_sets:'', video:''},
             ];
-          let musicList = '<table id="musicTable" class="mt"><tr><th>Tune</th><th>Type</th><th>PDF</th><th>BWW</th><th>Video</th><th>Tune List</th><th>Sets</th></tr>'; 
+          let musicList = '<table id="musicTable" class="mt sortable"><tr><th>Tune</th><th>Type</th><th>PDF</th><th>BWW</th><th>Video</th><th>Tune List</th><th>Sets</th></tr>'; 
           
           for (let i=0; i<music.length; i++) {
             musicList += '<tr><td>' + music[i].tune + '</td><td>' + music[i].tune_type + '</td><td><a href="music/';
