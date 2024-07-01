@@ -100,7 +100,7 @@
             {tune:'6_8\ Massed\ Bands\ Drum\ Cadence', tune_type:'6/8 March', tune_list:'A', tune_sets:'', video:'https://youtu.be/7_ihNjVMgQY', has_bww:false},
             ];
           let musicList = '<table id="musicTable" class="mt sortable"><thead><tr><th>Tune</th><th>Type</th><th>PDF</th><th>BWW</th><th>Video</th><th>Tune List</th><th>Sets</th></tr></thead><tbody>'; 
-          
+          let counter = 0;
           for (let i=0; i<music.length; i++) {
             musicList += '<tr><td>' + music[i].tune + '</td><td>' + music[i].tune_type + '</td><td><a href="music/';
             musicList += music[i].tune + '.pdf" target="_blank">PDF</a></td>';
@@ -115,9 +115,11 @@
               musicList += '<td></td>';
             }
             musicList += '<td>' + music[i].tune_list + '</td><td>' + music[i].tune_sets + '</td></tr>';
+            counter++;
           }
           musicList += '</tbody></table>';
           document.write(musicList);
+          console.log('Counter: ', counter);
         </script>
         <div>
           <h2>Tune Sets</h2>
