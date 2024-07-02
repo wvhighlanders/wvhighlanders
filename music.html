@@ -81,7 +81,7 @@
             {tune:'Scots\ Wha\ Hae', tune_type:'4/4 March', tune_list:'A', tune_sets:'SwH-StB', video:'', has_bww:true},
             {tune:'Scots\ Wha\ Hae\ (Slow)', tune_type:'6/8 Slow March', tune_list:'A', tune_sets:'SM', video:'', has_bww:true},
             {tune:'Simple\ Gifts', tune_type:'4/4 March', tune_list:'A', tune_sets:'RT-SG', video:'', has_bww:true},
-            {tune:'Skye\ Boat\ Song', tune_type:'6/8 Slow Air', tune_list:'J', tune_sets:'', video:'', has_bww:false},
+            {tune:'Skye\ Boat\ Song', tune_type:'6/8 Slow Air', tune_list:'J', tune_sets:'', video:'', has_bww:true},
             {tune:'Star-Spangled\ Banner', tune_type:'3/4 Slow March', tune_list:'J', tune_sets:'', video:'', has_bww:true},
             {tune:'Steamboat-Hundred\ Pipers-Bonnie\ Dundee', tune_type:'6/8 Marches', tune_list:'M', tune_sets:'6/8 Set', video:'', has_bww:false},
             {tune:'Stretcher\ Bearers\ March', tune_type:'6/8 March', tune_list:'X', tune_sets:'', video:'', has_bww:true},
@@ -109,7 +109,7 @@
             } else {
               musicList += '<td></td>'
             }
-            if (music[i].video!= '') {
+            if (music[i].video !== '') {
               musicList += '<td><a href="' + music[i].video + '" target="_blank">Video</a></td>';
             } else {
               musicList += '<td></td>';
