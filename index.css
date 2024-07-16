@@ -77,6 +77,10 @@ img {
   flex-direction: column;
 }
 
+.max-w {
+  max-width: 30vh;
+}
+
 table, th, td {
   color: black;
   border-collapse: collapse;
